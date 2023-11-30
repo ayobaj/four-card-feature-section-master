@@ -52,6 +52,10 @@ span.span{
     gap:3px;
     box-shadow: 0px 5px 3px #A3A5AE;
 }
+.section:hover{
+    cursor: pointer;
+    background-color: cyan;
+}
 
 .teamkarm{
     display: flex;
@@ -73,6 +77,10 @@ div.teambuilder{
     gap: 1px;
     box-shadow: 0px 5px 3px #A3A5AE;
 }
+.teambuilder:hover{
+    cursor: pointer;
+    background-color: red;
+}
 div.karma{
     display: flex;
     flex-direction: column;
@@ -84,6 +92,10 @@ div.karma{
     padding: 2rem;
     background-color: #FAFAFA;
     box-shadow: 0px 5px 3px #A3A5AE;
+}
+.karma:hover{
+    cursor: pointer;
+    background-color: orange;
 }
 .calculator{
     display: flex;
@@ -98,7 +110,43 @@ div.karma{
     background-color: #FAFAFA;
     box-shadow: 0px 5px 3px #A3A5AE;
 }
+.calculator:hover{
+    cursor: pointer;
+    background-color: blue;
+}
 .img{
     display: flex;
     justify-content: end;
+}
+.attribution{
+    text-align: center;
+    margin-top: 10px;
+}
+
+@media ((min-width:320px) and (max-width:767px) ) {
+    .heading{
+        text-align: center;
+        font-size: 16px;
+
+    }
+    .main{
+        padding: 0px 10px;
+        /* overflow: hidden; */
+        margin-top: 1.5rem;
+        margin-bottom: 1.8rem;
+    }
+    .cardhouse{
+        display: flex;
+        flex-direction: column;
+        margin-left: 15px;
+        margin-right: 15px;
+    }
+    .teamkarm{
+        display: flex;
+        flex-direction: column;
+        gap: 1.5rem;
+    }
+    .attribution{
+        text-align: center;
+    }
 }
